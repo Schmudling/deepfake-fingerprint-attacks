@@ -2,6 +2,9 @@ import argparse
 import os
 from pathlib import Path
 import numpy as np
+import os
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 from lib.GANDCTAnalysis.src.dataset import image_paths
 from lib.GANDCTAnalysis.src.image_np import load_image
 from src.resources.calculations import subtract_fingerprint, reduce_fingerprint_proportionally, dct, restore_from_dct, \
