@@ -1,9 +1,10 @@
 import argparse
 import os
+import sys
 import numpy as np
 from matplotlib import pyplot as plt
 from tensorflow import keras
-
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 from lib.GANDCTAnalysis.src.math import welford, log_scale, welford_multidimensional
 from src.resources.calculations import invert_log_scale, dct
 from src.resources.data_preparation import get_name_from_path, load_images_from_directory
